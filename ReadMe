@@ -1,0 +1,86 @@
+# 🚨 Theft Detector Android App (Arduino + IR Sensor)
+
+## 📌 Overview
+
+This project is a real-time **Theft Detection System** using **Arduino Uno + IR Sensor + Android App**.
+It detects motion and instantly alerts the user via a mobile application.
+
+---
+
+## ⚙️ Hardware Used
+
+* Arduino Uno
+* IR Sensor (Motion Detection)
+* Buzzer
+* USB Cable / OTG
+
+---
+
+## 📱 Features
+
+* Real-time motion detection
+* Instant alert on Android app
+* Buzzer alarm system
+* Simple and clean UI
+* USB Serial communication
+
+---
+
+## 🔌 Working
+
+1. IR Sensor detects motion
+2. Arduino sends `"ALERT"` via Serial
+3. Android app reads data
+4. App displays:
+
+   * 🚨 INTRUSION DETECTED
+   * ✅ SAFE
+
+---
+
+## 🧠 Tech Stack
+
+* Arduino (C++)
+* Android (Java)
+* USB Serial Communication
+
+---
+
+## 📸 Output
+
+* When motion detected → 🚨 Alert shown
+* When no motion → ✅ Safe
+
+---
+
+## 🚀 Future Improvements
+
+* Bluetooth connectivity (no OTG needed)
+* Push notifications
+* Firebase logging
+* Camera integration
+
+---
+
+## 👨‍💻 Author
+
+Anurag Singh
+CSE Student | Android & Web Developer
+
+---
+
+## ⭐ Contribute
+
+Feel free to fork and improve this project!
+
+
+
+💡 IMPORTANT (Don’t Miss This)
+
+👉 Add this dependency in build.gradle:
+
+implementation 'com.github.mik3y:usb-serial-for-android:3.5.1'
+
+👉 Also add USB permission in AndroidManifest.xml:
+
+<uses-feature android:name="android.hardware.usb.host" />

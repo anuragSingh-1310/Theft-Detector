@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0F1C"
+    android:padding="20dp">
+
+    <!-- APP TITLE -->
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="THEFT DETECTION"
+        android:textColor="#00E5FF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- STATUS CARD -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#121A2F"
+        android:elevation="10dp"
+        android:padding="20dp">
+
+        <!-- STATUS TEXT -->
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="..."
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#00FF9C"
+            android:shadowColor="#00FF9C"
+            android:shadowRadius="15"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- SUBTEXT -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Waiting for Arduino connection..."
+            android:textColor="#AAB4C8"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <!-- CONNECT BUTTON -->
+    <Button
+        android:id="@+id/connectBtn"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="CONNECT DEVICE"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:backgroundTint="#00E5FF"
+        android:elevation="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp" />
+
+</RelativeLayout>
